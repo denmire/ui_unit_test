@@ -3,8 +3,8 @@ pipeline {
 	stages {
 		stage('enable execution'){
 			steps{
-				chmod +x './jenkins/scripts/deploy.sh'
-				chmod +x './jenkins/scripts/kill.sh'
+				chmod '+x ./jenkins/scripts/deploy.sh'
+				chmod '+x ./jenkins/scripts/kill.sh'
 			}
 		}
 		stage('Integration UI Test') {
